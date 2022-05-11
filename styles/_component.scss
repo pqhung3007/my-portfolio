@@ -59,6 +59,7 @@
     position: relative;
     top: 5rem;
     padding-bottom: 10rem;
+    height: 100vh;
 
     & > .container {
         display: grid;
@@ -97,7 +98,7 @@
 
         &--profile {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
 
             .profile-outer {
@@ -142,6 +143,7 @@
 
             .profile-inner {
                 position: absolute;
+                top: 13rem;
                 width: 24rem;
                 height: 24rem;
                 border-radius: 50%;
@@ -154,6 +156,20 @@
 @keyframes move {
     to {
         transform: rotate(360deg);
+    }
+}
+
+.about {
+    background-color: $color-light;
+
+    h1 {
+        margin-bottom: 2rem;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 5rem;
     }
 }
 

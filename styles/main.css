@@ -58,6 +58,7 @@ h4 {
 }
 
 p {
+  font-size: 1.4rem;
   line-height: 1.8;
 }
 
@@ -121,6 +122,7 @@ img {
   position: relative;
   top: 5rem;
   padding-bottom: 10rem;
+  height: 100vh;
 }
 .landing > .container {
   display: grid;
@@ -153,7 +155,7 @@ img {
 }
 .landing__info--profile {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 .landing__info--profile .profile-outer {
@@ -196,6 +198,7 @@ img {
 }
 .landing__info--profile .profile-inner {
   position: absolute;
+  top: 13rem;
   width: 24rem;
   height: 24rem;
   border-radius: 50%;
@@ -213,6 +216,18 @@ img {
     transform: rotate(360deg);
   }
 }
+.about {
+  background-color: #f4f4f4;
+}
+.about h1 {
+  margin-bottom: 2rem;
+}
+.about__container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5rem;
+}
+
 .btn {
   padding: 1.5rem 3.5rem;
   font-size: 1.2rem;
