@@ -1,5 +1,11 @@
 section {
     padding: 10rem 0 7rem;
-    max-width: 100vh;
+    // min-width: 100vh;
     overflow: hidden;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
 }
