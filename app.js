@@ -9,7 +9,7 @@ hamburgerBtn.addEventListener('click', () => {
 })
 
 closeBtn.addEventListener('click', () => {
-    menu.style.width = 'none'
+    menu.style.display = 'none'
     hamburgerBtn.style.display = 'block'
     closeBtn.style.display = 'none'
 })
@@ -38,3 +38,18 @@ menu.addEventListener('click', (e) => {
         document.querySelector(id).scrollIntoView({ behavior: "smooth" })
     }
 })
+
+const heading = document.querySelector('.hero__heading')
+const content = 'Hi, I am Pham Quang Hung'
+let index = 1
+
+const autoRunText = () => {
+    heading.innerText = content.slice(0, index)
+    index++
+    if (index > content.length) {
+        index = 1
+    }
+    setTimeout(autoRunText, 150)
+}
+
+autoRunText()
