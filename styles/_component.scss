@@ -173,13 +173,24 @@
         grid-template-columns: 1fr 2fr;
         gap: 5rem;
     }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
 }
 
-.projects h1 {
+.projects {
+    h1 {
         text-align: left;
-        margin: 3rem 0 1rem;
+        margin: 3rem 0;
         width: 70%;
     }
+    h2{
+        margin-top: 1rem;
+    }
+}
 
 .project {
     display: grid;
@@ -232,7 +243,6 @@
 
             & > .btn {
                 width: 15rem;
-                border: none;
                 font-size: 1.5rem;
                 margin-top: 5rem;
 
@@ -263,14 +273,26 @@
             }
     }
 }
+}
+
+.footer__copyright {
+    font-weight: 500;
+    text-align: center;
+    padding: 3rem;
+    & > a{
+        color: $color-black;
+    }
+}
 
 .btn {
+    width: 18rem;
     padding: 1.5rem 3.5rem;
     font-size: 1.2rem;
-    color: $color-black;
-    background: $color-white;
+    color: $color-white;
+    background: $color-primary;
     transition: $transition;
     border-radius: 8px;
+    text-align: center;
 
     &:hover {
     box-shadow: 0 2rem 2rem $color-primary-light;
@@ -281,5 +303,4 @@
         background: $color-primary;
         color: $color-white;
     }
-}
 }
