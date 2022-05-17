@@ -161,8 +161,9 @@
             margin: 2.3rem 0 2rem;
         }
         p {
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             width: 50rem;
+            line-height: 2;
 
             @media (max-width: 560px) {
                     text-align: center;
@@ -208,6 +209,24 @@
         display: flex;
         flex-direction: column;
         gap: 3rem;
+    }
+
+    &__tech {
+    font-size: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    transition: 0.3s;
+    margin-bottom: 2rem;
+
+    & i {
+        transition: $transition;
+        &:hover {
+            cursor: pointer;
+            color: $color-primary;
+        }
+    }
     }
 }
 
@@ -284,8 +303,7 @@
                 margin-top: 5rem;
                 
                 &:hover {
-                    background-color: $color-primary;
-                    color: $color-white;
+                    transform: scale(1.06);
                 }
             }
         }
@@ -308,6 +326,10 @@
             &::placeholder {
                 color: $color-white;
             }
+
+            @media (max-width: 560px) {
+                width: 100%;
+            }
         }
     }
 }
@@ -324,7 +346,7 @@
 .btn {
     width: 18rem;
     padding: 1.5rem 3.5rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: $color-white;
     background: $color-primary;
     transition: $transition;
