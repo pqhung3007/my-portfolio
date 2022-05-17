@@ -53,7 +53,7 @@
     }
 }
 
-.landing {
+.hero {
     display: grid;
     place-items: center;
     position: relative;
@@ -65,6 +65,7 @@
         display: grid;
         grid-template-columns: 5rem auto 30rem;
         gap: 2rem;
+        align-content: center;
     }
 
     &__socials {
@@ -143,7 +144,8 @@
 
             .profile-inner {
                 position: absolute;
-                top: 13rem;
+                // top: 18.75rem laptop screen size;
+                top: 37rem;
                 width: 24rem;
                 height: 24rem;
                 border-radius: 50%;
