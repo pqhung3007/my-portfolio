@@ -75,7 +75,7 @@ img {
 .nav__primary {
   font-size: 3rem;
   font-weight: 500;
-  color: #f24e1e;
+  color: #7B68EE;
 }
 .nav__container {
   height: 100%;
@@ -100,10 +100,10 @@ img {
   transition: all 0.3s ease;
 }
 .nav__container > ul > li > a:hover {
-  color: #f24e1e;
+  color: #7B68EE;
 }
 .nav__container > ul > li > a.active {
-  background-color: #f24e1e;
+  background-color: #7B68EE;
   color: #fff;
 }
 @media (max-width: 560px) {
@@ -116,7 +116,7 @@ img {
     width: 16rem;
     height: 100vh;
     background-color: #fff;
-    box-shadow: 0.5rem 0 2rem rgba(242, 78, 28, 0.1215686275);
+    box-shadow: 0.5rem 0 2rem #7B68EE;
     display: none;
   }
   .nav__container li {
@@ -197,7 +197,7 @@ img {
   transition: all 0.3s ease;
 }
 .hero__socials > a:hover {
-  color: #f24e1e;
+  color: #7B68EE;
 }
 .hero__info h1 {
   text-align: left;
@@ -272,7 +272,7 @@ img {
 }
 .about__tech i:hover {
   cursor: pointer;
-  color: #f24e1e;
+  color: #7B68EE;
 }
 
 .projects h1 {
@@ -306,7 +306,10 @@ img {
   font-size: 1.4rem;
 }
 .project__item .cta a {
-  color: #f24e1e;
+  color: #7B68EE;
+}
+.project__item .cta a:hover {
+  font-weight: 500;
 }
 
 .contact {
@@ -336,12 +339,13 @@ img {
 .contact__container form {
   margin-top: 3rem;
 }
-.contact__container form > .btn {
+.contact__container form > .btn__primary {
   width: 15rem;
   font-size: 1.5rem;
   margin-top: 5rem;
 }
-.contact__container form > .btn:hover {
+.contact__container form > .btn__primary:hover {
+  cursor: pointer;
   transform: scale(1.06);
 }
 .contact__container input, .contact__container textarea {
@@ -379,9 +383,10 @@ img {
   font-weight: 500;
   text-align: center;
   padding: 3rem;
+  background-color: #f4f4f4;
 }
 .footer__copyright > a {
-  color: #141415;
+  color: #7B68EE;
 }
 
 .btn {
@@ -389,17 +394,17 @@ img {
   padding: 1.5rem 3.5rem;
   font-size: 1.4rem;
   color: #fff;
-  background: #f24e1e;
+  background: #7B68EE;
   transition: all 0.3s ease;
   border-radius: 8px;
   text-align: center;
 }
 .btn:hover {
-  box-shadow: 0 2rem 2rem rgba(242, 78, 28, 0.1215686275);
+  box-shadow: 0 5px 5px 5px rgba(191, 181, 245, 0.7490196078);
   cursor: pointer;
 }
 .btn__primary {
-  background: #f24e1e;
+  background: #7B68EE;
   color: #fff;
 }
 
