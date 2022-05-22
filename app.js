@@ -1,3 +1,4 @@
+// TOGGLE NAVBAR
 const hamburgerBtn = document.querySelector('.nav__btn--hamburger')
 const closeBtn = document.querySelector('.nav__btn--cross')
 const menu = document.querySelector('.nav__container ul')
@@ -14,6 +15,7 @@ closeBtn.addEventListener('click', () => {
     closeBtn.style.display = 'none'
 })
 
+// NAVIGATE ITEMS
 const navItems = menu.querySelectorAll('li')
 
 navItems.forEach(item => {
@@ -39,6 +41,7 @@ menu.addEventListener('click', (e) => {
     }
 })
 
+// AUTO TEXT EFFECT
 const heading = document.querySelector('.hero__heading')
 const content = 'Hi, I am Pham Quang Hung'
 let index = 1
@@ -53,3 +56,22 @@ const autoRunText = () => {
 }
 
 autoRunText()
+
+// REVEAL SECTION
+const sections = document.querySelectorAll(".section")
+const revealSections = (entries, observer) => {
+    const [entry] = entries
+    if (entry.isIntersecting) {
+        entry.target.classList.remove('section--hidden');
+    }
+}
+
+const sectionObserver = new IntersectionObserver(revealSections, {
+    root: null,
+    threshold: 0.15,
+});
+
+sections.forEach(section => {
+    sectionObserver.observe(section);
+    section.classList.add('section--hidden');
+})
