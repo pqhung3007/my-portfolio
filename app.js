@@ -75,3 +75,25 @@ sections.forEach(section => {
     sectionObserver.observe(section);
     section.classList.add('section--hidden');
 })
+
+// NAVIGATE ITEMS
+window.addEventListener('scroll', () => {
+    let current = ''
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop
+        const sectionHeight = section.clientHeight
+
+        // highlight tag before scrolling to 1/3 of next section height
+        if (scrollY >= (sectionTop - sectionHeight / 3)) {
+            current = section.getAttribute('id')
+        }
+    });
+
+    const navAnchors = menu.querySelectorAll('li a')
+    navAnchors.forEach(anchor => {
+        anchor.classList.remove('active')
+        if (anchor.getAttribute('href').includes(current)) {
+            anchor.classList.add('active')
+        }
+    });
+})
